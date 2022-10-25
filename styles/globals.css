@@ -1,0 +1,40 @@
+@import "./global/all.css";
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../public/fonts/proxima-nova-font.otf");
+}
+
+:root {
+  --proxima-nova: "Proxima Nova";
+  --libre-bodoni: "Libre Bodoni";
+}
+
+* {
+  font-family: var(--proxima-nova);
+  transition: all 0.5s ease-out;
+}
+
+/* Global styling Button */
+.btn {
+  box-shadow: none !important;
+}
+
+a:hover {
+  color: black !important;
+  cursor: pointer;
+}
+p {
+  margin-bottom: 0rem;
+}
+/* border  */
+.rounded-20 {
+  border-radius: 20px;
+}
+
+/* Accordin */
+.accordion-button:not(.collapsed)::after {
+  display: none !important;
+}
+.accordion-button::after {
+  display: none !important;
+}
